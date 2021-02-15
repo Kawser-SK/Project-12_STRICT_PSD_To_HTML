@@ -1,0 +1,122 @@
+/**
+*  Strict 
+* author: KAWSER AHAMED
+* version: 0.0.1
+* Date: 15-02-2021
+**/
+
+/* ============================
+        DEFULTE CSS
+ ============================ */
+ @font-face{
+       font-family: lato;
+       src: url('../webfonts/Lato-Regular.ttf');
+       src: url('../webfonts/Lato-Bold.ttf');
+ }
+*{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+}
+body{
+      font-family: 'Lato';
+      font-weight: 400;
+}
+a{
+      text-decoration: none;
+}
+li{
+      list-style: none;
+}
+p{
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 26px;
+}
+img{
+      width: 100%;
+      height: auto;
+}
+.container{
+      width: 75%;
+      margin: 0 auto;
+}
+
+ /* ============================
+        START HEAEDR SECTION
+ ============================ */
+header{
+      padding: 30px 0;
+      background: #f5f9f9;
+}
+.header-wrapper{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+}
+.logo{
+
+}
+.menu{
+
+}
+nav ul{
+       display: flex;
+}
+nav ul li{
+      margin: 0 23px ;
+}
+nav ul li:last-child{
+      margin-right: 0;
+}
+nav ul li a{
+      font-size: 16px;
+      color: #2d3950;
+      font-weight: 700;
+      text-transform: uppercase;
+}
+
+  /* ============================
+       START BENNAR SECTION
+ ============================ */
+.banner-section{
+      background-image: url("/img/banner.jpg");
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+     
+}
+.banner-contant{
+     text-align: center; 
+}
+.banner-contant h1{
+    font-size: 120px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
+}
+.banner-contant p{
+      font-size: 20px;
+      font-weight: 400;
+      color: #fff;
+}
+button {
+      background: transparent;
+     outline:none;
+     border: 1px solid #15a3f9;
+     border-radius:3px;
+}
+button a{
+      font-size: 16px;
+      color: #fff;
+      padding: 14px 20px;
+      display: block;
+      text-transform: uppercase;
+}
+ /* ============================
+       START FOOTER SECTION
+ ============================ */
