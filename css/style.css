@@ -19,8 +19,8 @@
       box-sizing: border-box;
 }
 body{
-      font-family: 'Lato';
-      font-weight: 400;
+      font-family: 'Lato', sans-serif;
+      
 }
 a{
       text-decoration: none;
@@ -39,6 +39,10 @@ img{
 }
 .container{
       width: 75%;
+      margin: 0 auto;
+}
+.container-2{
+      width: 70%;
       margin: 0 auto;
 }
 
@@ -64,7 +68,7 @@ nav ul{
        display: flex;
 }
 nav ul li{
-      margin: 0 23px ;
+      margin: 0 15px ;
 }
 nav ul li:last-child{
       margin-right: 0;
@@ -74,13 +78,20 @@ nav ul li a{
       color: #2d3950;
       font-weight: 700;
       text-transform: uppercase;
+      padding: 10px 20px;
+}
+nav ul li a:hover{
+    background: #15a3f9;
+    transition: .3s;
+    color: #fff;
+
 }
 
   /* ============================
        START BENNAR SECTION
  ============================ */
 .banner-section{
-      background-image: url("../img/banner.jpg");
+      background-image: url("/img/banner.jpg");
       background-position: center;
       background-size: cover;
       background-repeat: no-repeat;
@@ -98,11 +109,22 @@ nav ul li a{
     font-weight: 700;
     text-transform: uppercase;
     color: #fff;
+    margin-bottom: 30px;
+}
+.line::after{
+      content: "";
+      width: 40%;
+      height: 3px;
+      background: #15a3f9;
+      display: block;
+      text-align: center;
+      margin: 0 auto;
 }
 .banner-contant p{
       font-size: 20px;
       font-weight: 400;
       color: #fff;
+      margin: 30px 0 60px 0;
 }
 button {
       background: transparent;
@@ -117,6 +139,91 @@ button a{
       display: block;
       text-transform: uppercase;
 }
+button:hover{
+      background: #15a3f9;
+      color: #fff;
+      transition: .5s;
+}
+
+.arrow{
+      font-size: 30px;
+      color: #fff;
+      position: relative;
+      animation: move 5s infinite;
+      animation-duration: 5s;
+}
+@keyframes move {
+      0%{
+            top: 0px;
+      }
+      100%{
+           top: 160px;
+      }
+    }
+ /* ============================
+       START SERVICES SECTION
+ ============================ */
+
+.service-section{
+      padding: 75px 0 100px 0;
+      background: #f6f9f9;
+}
+.servise-contant{
+      text-align: center;
+}
+.servise-contant h2{
+      font-size: 40px;
+      color: #2d3950;
+      font-weight: 400;
+      padding-bottom: 25px;
+
+}
+.servise-contant p{
+      font-size: 20px;
+      color: #999999;
+      font-weight: 400;
+      line-height: 30px;
+}
+
+.service-items-section{
+      padding: 60px 0;
+}
+.item-wrepper{
+      display: flex;
+      justify-content: space-around;
+}
+.service-item{
+      text-align: center;
+      flex-basis: 25%;
+}
+.item-icon{
+      width: 100px;
+      height: 100px;
+      background: rgb(72,186,255);
+      background: linear-gradient(90deg, rgba(72,186,255,1) 50%, rgba(95,195,255,1) 50%);
+      text-align: center;
+      line-height: 100px;
+      font-size: 50px;
+      color: #fff;
+      margin: 0 auto;
+}
+.service-item h3{
+      font-size: 22px;
+      font-weight: 400;
+      color: #2d3950;
+      padding: 30px 0 20px 0;
+}
+.service-item p{
+      font-size: 15px;
+      font-weight: 400;
+      color: #999999;
+}
+ /* ============================
+       START FOOTER SECTION
+ ============================ */
+ /* ============================
+       START FOOTER SECTION
+ ============================ */
  /* ============================
        START FOOTER SECTION
  ============================ */
