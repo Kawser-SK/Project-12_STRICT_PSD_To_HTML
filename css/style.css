@@ -10,8 +10,8 @@
  ============================ */
  @font-face{
        font-family: lato;
-       src: url('../webfonts/Lato-Regular.ttf');
-       src: url('../webfonts/Lato-Bold.ttf');
+       src: url('../font/Lato-Regular.ttf');
+       src: url('../font/Lato-Bold.ttf');
  }
 *{
       margin: 0;
@@ -58,12 +58,7 @@ header{
       justify-content: space-between;
       align-items: center;
 }
-.logo{
 
-}
-.menu{
-
-}
 nav ul{
        display: flex;
 }
@@ -84,7 +79,6 @@ nav ul li a:hover{
     background: #15a3f9;
     transition: .3s;
     color: #fff;
-
 }
 
   /* ============================
@@ -98,8 +92,7 @@ nav ul li a:hover{
       height: 100vh;
       display: flex;
       justify-content: center;
-      align-items: center;
-     
+      align-items: center;   
 }
 .banner-contant{
      text-align: center; 
@@ -176,12 +169,10 @@ button:hover{
       color: #2d3950;
       font-weight: 400;
       padding-bottom: 25px;
-
 }
 .servise-contant p{
-      font-size: 20px;
+      font-size: 18px;
       color: #999999;
-      font-weight: 400;
       line-height: 30px;
 }
 
