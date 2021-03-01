@@ -71,7 +71,7 @@ nav ul li a{
       padding: 10px 20px;
 }
 nav ul li a:hover{
-    background: #15a3f9;
+    background: #15a1f9a4;
     transition: .3s;
     color: #fff;
 }
@@ -223,72 +223,66 @@ button:hover{
       text-align: center;
       padding-bottom: 70px;
 }
-.gallery {
-	display: flex;
-	flex-wrap: wrap;
+
+
+.gallery{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding: 15px;
+}
+.gallary-item{
+      width: 31%;
+      position: relative;
+      cursor: pointer;
 }
 
-/* .gallery-item {
-	flex: 1 0 10rem;
-	margin: 1rem;
-	overflow: hidden;
-} */
-.gallery-image {
-	display: block;
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
-	transition: transform 400ms ease-out;
-}
-.img-gallery-item {
-      position: relative;
+.gallary-item:hover .gallary-img::after{
       width: 100%;
-      max-width: 350px;
-      margin: 10px;
-      box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
-          
+      transition-duration: .3s;
 }
-.imagess {
-      display: block;
-      width: 100%;
-      height: auto;
-} 
-.img-overlays {
-      position: absolute;
+.gallary-img::after{
+      content: "";
+      background: #15a4fad6;
+      width: 0;
+      height: 100%;
       top: 0;
-      bottom: 0;
       left: 0;
-      right: 0;
-      opacity: 0;
-      transition: .3s ease;
-      background-color: #15a1f96e;
-} 
-.img-gallery-item:hover .img-overlays {
-      opacity: 1;
-      cursor: pointer;   
-} 
-.icons {
-      color: white;
-      font-size: 25px;
       position: absolute;
-      top: 50%;
-      left: 60%;
-      border: 2px solid rgb(255, 255, 255);
-      padding: 5px;
-      border-radius:3px;
-      transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-      text-align: center;
- }
- .icon-2{
-      top: 50%;
-      left: 45%;
- }
-    
-.fa-userss:hover {
-      color: #eee;
-      transform: scale(1.15);
+      transition-duration: .3s;
 }
+.gallary-item:hover .gallary-icon{
+      top: 50%;
+      transition: .3s all ease-in-out;
+      opacity: 1;
+}
+.gallary-icon {
+   position: absolute;
+   top: 65%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   opacity: 0;
+}
+.gallary-icon ul{
+      display: flex;
+      text-align: center;
+      padding: 0;
+      margin: 0;
+}
+.gallary-icon ul li{
+      line-height: 42px;
+      text-align: center;
+      height: 42px;
+      width: 42px;
+      border: 1px solid #fff;
+      color: #fff;
+      margin: 0 10px;
+      border-radius: 3px;
+}
+.gallary-icon ul li i{
+      color: #fff;
+}
+
 
  /* ============================
        START CONTACT SECTION
@@ -378,6 +372,12 @@ button:hover{
       font-size: 15px;
       color: #fff;
 }
+.submit-btn:hover{
+      background: #15a3f9;
+      color: #fff;
+      transition: .5s;
+      border-color: #15a3f9;
+}
 
  /* ============================
        START FOOTER SECTION
@@ -402,6 +402,7 @@ footer{
      margin-right:10px;
  }
  .footer-icons li a{
+       font-size: 15px;
      padding: 10px;
      border-radius:4px;
      background: #15a4fa;
@@ -411,7 +412,7 @@ footer{
      margin-right:0px
  }
  .footer-icons li a:hover{
-      background: #000000;
+      background: #1285cc;
       color: #fff;
       transition:.3s;
   }
